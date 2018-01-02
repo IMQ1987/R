@@ -27,8 +27,12 @@ apply(bspmatrix,2,sum)
 colnames()
 
 #dplyr
+library(dplyr)
 data %>%
   filter(Land == "Germany")
+
+data %>%
+  group_by(desc(Land))
 
 ################################## RESEARCH TOPICS ###########################
 summary
@@ -42,4 +46,5 @@ library(reshape)
 cut
 subset
 grid
+
 
